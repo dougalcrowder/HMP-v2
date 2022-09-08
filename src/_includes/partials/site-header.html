@@ -1,42 +1,58 @@
-<header>
-  <nav class="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
-    <div class="flex h-16 items-center justify-between">
+<header class="fixed w-full z-50">
+  <nav class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 p-8 lg:pt-16 z-50">
+    <div class="flex items-center justify-center md:justify-between">
       <figure class="flex flex-shrink-0 items-center space-x-1">
-        <img
-          alt="11st starter-kit logo"
-          class="h-8 w-auto"
-          src="/images/11st-logo.svg"
-          height="32"
-          width="32"
-        />
-        <figcaption>Starter-Kit</figcaption>
-      </figure>
-      <ul class="flex space-x-4">
-        {% for item in navigation.items %} {% if item.url == page.url %} {%
-        assign highlight = 'cursor-default' %} {% assign current =
-        'aria-current="page"' %} {% else %} {% assign highlight = 'underline' %}
-        {% assign current = '' %} {% endif %}
-        <li>
-          <a
-            href="{{ item.url }}"
-            class="text-base font-bold {{ highlight }}"
-            {{
-            current
-            }}
+        <picture>
+          <source 
+            srcset="https://res.cloudinary.com/hop-yard-brewing/image/upload/v1662643363/HMP-holding/header-logo_2x.png 2x, https://res.cloudinary.com/hop-yard-brewing/image/upload/v1662643363/HMP-holding/header-logo.png 1x" 
+            media="(min-width: 768px)"
           >
-            {{ item.text }}
+          <source 
+            srcset="https://res.cloudinary.com/hop-yard-brewing/image/upload/v1662643363/HMP-holding/header-logo.png" 
+            media="(min-width: 300px)"
+          >
+          <img class="h-10 w-auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Hannah Martin Pierced" width="222" height="40">
+        </picture>
+        <figcaption class="sr-only">Hannah Martin Pierced</figcaption>
+      </figure>
+      <ul class="hidden md:flex md:space-x-16">
+        <li> 
+          <a href="#about" class="text-hmpgrey font-light {{ highlight }}" {{ current }}>
+            About
           </a>
         </li>
-        {% endfor %}
         <li>
-          <a
-            href="https://github.com/stefanfrede/11st-starter-kit/"
-            class="text-base font-bold underline hover:text-green-900"
-          >
-            GitHub
+          <a href="#booking" class="text-hmpgrey font-light {{ highlight }}" {{ current }}>
+            Locations
+          </a>
+        </li>
+        <li> 
+          <a href="#booking" class="bg-transparent hover:hmpgrey text-hmpgrey font-light hover:text-white py-2 px-4 border border-hmpgrey hover:border-hmpgrey rounded" {{ current }}>
+            Booking
           </a>
         </li>
       </ul>
     </div>
   </nav>
 </header>
+<div class="w-full z-10 relative overflow-hidden">
+  <picture class="block overflow-hidden">
+    <source 
+      srcset="https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917610/HMP-holding/hmp-desk.jpg 1x,https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917612/HMP-holding/hmp-desk_2x.jpg 2x" 
+      media="(min-width: 1024px)"
+    >
+    <source 
+      srcset="https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917612/HMP-holding/hmp-tab.jpg 1x,https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917612/HMP-holding/hmp-tab_2x.jpg 2x" 
+      media="(min-width: 560px)"
+    >
+    <source 
+      srcset="https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917610/HMP-holding/hmp-mob.jpg 1x,https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917611/HMP-holding/hmp-mob_2x.jpg 2x" 
+      media="(min-width: 300px)"
+    >
+    <img id="image1" loading="lazy" class="lazy w-full" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Hannah MArtin Pierced" width="100" height="100">
+  </picture>
+  <a href="#booking" class="bg-transparent hover:hmpgrey text-hmpgrey font-light hover:text-white py-2 px-4 border border-hmpgrey hover:border-hmpgrey rounded booking_button" {{ current }}>
+    Booking
+  </a>
+  <p class="collection_text text-base text-center"><span class="mr-1">Collection Launches Fall 22</span> <span>Collection Launches Fall 22</span></p>
+</div>

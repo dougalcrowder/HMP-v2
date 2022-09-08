@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  @font-face {
+    font-family: 'Marr Sans True Web';
+    src: url('fonts/MarrSans-Regular-Web.woff2') format('woff2'),
+    url('fonts/MarrSans-Regular-Web.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+  }
+  @font-face {
+    font-family: 'Marr Sans True Web';
+    src: url('fonts/MarrSans-Light-Web.woff2') format('woff2'),
+    url('fonts/MarrSans-Light-Web.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+  }
+  .tnegative {
+    margin-top: -120px;
+  }
+  .tnegative-xl {
+    margin-top: -240px;
+  }
+  .textbox {
+    width: 100%;
+    max-width: 450px;
+  }
+  .quote {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 767px){
+    .booking_button {
+      position: absolute;
+      top: 55%;
+      left: calc(50% - 46px);
+    }
+    .collection_text {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 49%;
+      min-width: 150%;
+    }
+  }
+  @media screen and (min-width: 768px){
+    .booking_button, .collection_text  {
+      display: none;
+      visibility: hidden;
+    }
+    .quote {
+      font-size: 2.5rem;
+    }
+  }
+}
+.faded {
+  opacity: 0;
+  transition: all 0.9s ease-in-out;
+}
+.fade-in {
+  opacity: 1;
+}
+img {
+  transform: scaleX(1) scaleY(1);
+  transform-origin: center center;
+}
