@@ -20,6 +20,7 @@ module.exports = {
       hmpgrey: '#3F494E',
       blackish: '#212529',
       whiter:'#ffffff',
+      button_hover: '#E2C495',
     }
   },
   variants: {},

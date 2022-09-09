@@ -18,7 +18,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' https://rsms.me https://api.netlify.com https://calendly.com ; style-src 'self' https://rsms.me https://use.typekit.net https://p.typekit.net https://assets.calendly.com 'unsafe-inline'; script-src 'self' https://unpkg.com https://assets.calendly.com 'unsafe-eval' 'unsafe-inline'; worker-src 'self' blob:; img-src 'self' https://res.cloudinary.com data:; font-src 'self' https://use.typekit.net;"
+    Content-Security-Policy = "default-src 'self' https://rsms.me https://api.netlify.com https://calendly.com ; style-src 'self' https://rsms.me https://use.typekit.net https://p.typekit.net https://assets.calendly.com https://hannahmartin-fonts.s3-eu-west-2.amazonaws.com 'unsafe-inline'; script-src 'self' https://unpkg.com https://assets.calendly.com 'unsafe-eval' 'unsafe-inline'; worker-src 'self' blob:; img-src 'self' https://res.cloudinary.com data:; font-src 'self' https://use.typekit.net https://hannahmartin-fonts.s3-eu-west-2.amazonaws.com;"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
