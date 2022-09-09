@@ -5,16 +5,16 @@
 @layer components {
   @font-face {
     font-family: 'Marr Sans True Web';
-    src: url('/public/fonts/MarrSans-Regular-Web.woff2') format('woff2'),
-    url('/public/fonts/MarrSans-Regular-Web.woff') format('woff');
+    src: url('/fonts/MarrSans-Regular-Web.woff2') format('woff2'),
+    url('/fonts/MarrSans-Regular-Web.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
   }
   @font-face {
     font-family: 'Marr Sans True Web';
-    src: url('/public/fonts/MarrSans-Light-Web.woff2') format('woff2'),
-    url('/public/fonts/MarrSans-Light-Web.woff') format('woff');
+    src: url('/fonts/MarrSans-Light-Web.woff2') format('woff2'),
+    url('/fonts/MarrSans-Light-Web.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
