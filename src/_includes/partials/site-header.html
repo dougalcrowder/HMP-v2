@@ -1,35 +1,64 @@
-<header class="fixed w-full z-50">
-  <nav class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 p-8 z-50">
+<header class="fixed z-50 w-full">
+  <nav class="z-50 mx-auto max-w-screen-2xl p-8 px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-center md:justify-between">
       <figure class="flex flex-shrink-0 items-center space-x-1">
-        <a href="#main-content" alt="go to top">
-        <picture>
-          <source 
-            srcset="https://res.cloudinary.com/hop-yard-brewing/image/upload/v1662643363/HMP-holding/header-logo_2x.png 2x, https://res.cloudinary.com/hop-yard-brewing/image/upload/v1662643363/HMP-holding/header-logo.png 1x" 
-            media="(min-width: 768px)"
-          >
-          <source 
-            srcset="https://res.cloudinary.com/hop-yard-brewing/image/upload/v1662643363/HMP-holding/header-logo.png" 
-            media="(min-width: 300px)"
-          >
-          <img class="h-10 w-auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Hannah Martin Pierced" width="222" height="40">
-        </picture>
+        <a href="#top" alt="go to top">
+          <picture>
+            <source
+              srcset="
+                https://res.cloudinary.com/hop-yard-brewing/image/upload/v1662643363/HMP-holding/header-logo_2x.png 2x,
+                https://res.cloudinary.com/hop-yard-brewing/image/upload/v1662643363/HMP-holding/header-logo.png    1x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                https://res.cloudinary.com/hop-yard-brewing/image/upload/v1662643363/HMP-holding/header-logo.png
+              "
+              media="(min-width: 300px)"
+            />
+            <img
+              class="h-10 w-auto"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              alt="Hannah Martin Pierced"
+              width="222"
+              height="40"
+            />
+          </picture>
         </a>
         <figcaption class="sr-only">Hannah Martin Pierced</figcaption>
       </figure>
       <ul class="hidden md:flex md:space-x-16">
-        <li> 
-          <a href="#about" class="text-hmpgrey font-light {{ highlight }}" {{ current }}>
+        <li>
+          <a
+            href="#about"
+            class="text-hmpgrey font-light {{ highlight }}"
+            {{
+            current
+            }}
+          >
             About
           </a>
         </li>
         <li>
-          <a href="#booking" class="text-hmpgrey font-light {{ highlight }}" {{ current }}>
+          <a
+            href="#booking"
+            class="text-hmpgrey font-light {{ highlight }}"
+            {{
+            current
+            }}
+          >
             Locations
           </a>
         </li>
-        <li> 
-          <a href="#booking" class="bg-transparent text-hmpgrey font-light py-2 px-4 border border-hmpgrey transition rounded hover:text-whiter hover:bg-hmpgrey" {{ current }}>
+        <li>
+          <a
+            href="#booking"
+            class="bg-transparent rounded border border-hmpgrey py-2 px-4 font-light text-hmpgrey transition hover:bg-hmpgrey hover:text-whiter"
+            {{
+            current
+            }}
+          >
             Booking
           </a>
         </li>
@@ -37,24 +66,50 @@
     </div>
   </nav>
 </header>
-<div class="w-full z-10 relative overflow-hidden">
+<div id="top" class="relative z-10 w-full overflow-hidden">
   <picture class="block overflow-hidden">
-    <source 
-      srcset="https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917610/HMP-holding/hmp-desk.jpg 1x,https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917612/HMP-holding/hmp-desk_2x.jpg 2x" 
+    <source
+      srcset="
+        https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917610/HMP-holding/hmp-desk.jpg    1x,
+        https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917612/HMP-holding/hmp-desk_2x.jpg 2x
+      "
       media="(min-width: 1024px)"
-    >
-    <source 
-      srcset="https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917612/HMP-holding/hmp-tab.jpg 1x,https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917612/HMP-holding/hmp-tab_2x.jpg 2x" 
+    />
+    <source
+      srcset="
+        https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917612/HMP-holding/hmp-tab.jpg    1x,
+        https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917612/HMP-holding/hmp-tab_2x.jpg 2x
+      "
       media="(min-width: 560px)"
-    >
-    <source 
-      srcset="https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917610/HMP-holding/hmp-mob.jpg 1x,https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917611/HMP-holding/hmp-mob_2x.jpg 2x" 
+    />
+    <source
+      srcset="
+        https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917610/HMP-holding/hmp-mob.jpg    1x,
+        https://res.cloudinary.com/hop-yard-brewing/image/upload/v1660917611/HMP-holding/hmp-mob_2x.jpg 2x
+      "
       media="(min-width: 300px)"
-    >
-    <img id="image1" loading="lazy" class="lazy w-full" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Hannah MArtin Pierced" width="100" height="100">
+    />
+    <img
+      id="image1"
+      loading="lazy"
+      class="lazy w-full"
+      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      alt="Hannah MArtin Pierced"
+      width="100"
+      height="100"
+    />
   </picture>
-  <a href="#booking" class="bg-transparent hover:hmpgrey text-hmpgrey font-light hover:text-white py-2 px-4 border border-hmpgrey hover:border-hmpgrey rounded booking_button" {{ current }}>
+  <a
+    href="#booking"
+    class="bg-transparent hover:hmpgrey hover:text-white booking_button rounded border border-hmpgrey py-2 px-4 font-light text-hmpgrey hover:border-hmpgrey"
+    {{
+    current
+    }}
+  >
     Booking
   </a>
-  <p class="collection_text text-base text-center"><span class="mr-1">Collection Launches Fall 22</span> <span>Collection Launches Fall 22</span></p>
+  <p class="collection_text text-center text-base">
+    <span class="mr-1">Collection Launches Fall 22</span>
+    <span>Collection Launches Fall 22</span>
+  </p>
 </div>
